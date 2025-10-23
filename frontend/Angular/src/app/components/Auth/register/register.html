@@ -1,0 +1,49 @@
+<body>
+<nav class="navbar">
+    <img [src]="'assets/images/upcoming-unscreen.gif'" class="navbar-logo">
+    <span class="brand-text">Focusly</span>
+</nav>
+
+
+<div class="register-page">
+        <div class="container mt-5 d-flex justify-content-center" id="main-container">
+            <div class="card p-4" style="width: 400px;">
+                <form action="#" method="post">
+                    <div class="mb-4">
+                        <input autocomplete="off" autofocus class="form-control" name="email" placeholder="Email" type="email" required>
+                    </div>
+                    <div class="mb-4">
+                        <input class="form-control" name="Username" placeholder="Username" type="text" required>
+                    </div>
+                    <div class="mb-4">
+                        <input class="form-control" name="password" placeholder="Password" type="password" required>
+                    </div>
+                    <div class="mb-4">
+                        <input class="form-control" name="ConfirmPass" placeholder="Confirm Password" type="Password" required>
+                    </div>
+
+                    <form>
+                    <label style="display: inline-block; margin-right: 10px;">
+                        <input type="radio" name="role" value="Student"> Student
+                    </label>
+                    <label style="display: inline-block; margin-right: 10px;">
+                        <input type="radio" name="role" value="Employee"> Employee
+                    </label>
+                    <label style="display: inline-block; margin-right: 10px;">
+                        <input type="radio" name="role" value="other"> Other
+                    </label>
+
+                    </form>
+                    <div class="d-grid">
+                        <!-- Login Button -->
+                        <button class="btn btn-primary mb-2" type="submit">Register</button>
+                    </div>
+                </form>
+                <div class="text-center">
+                    <!-- Register Link -->
+                    <p>Already Registerd? <a routerLink="/Login">Login here</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

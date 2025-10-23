@@ -7,6 +7,11 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideZonelessChangeDetection(),
-    provideRouter(routes)
+    provideRouter(routes),
+    // provideAnimations()
   ]
 };
+// function provideAnimations(): import("@angular/core").Provider | import("@angular/core").EnvironmentProviders {
+//   throw new Error('Function not implemented.');
+// }
+
