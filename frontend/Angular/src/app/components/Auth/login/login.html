@@ -1,32 +1,55 @@
 <body>
-<nav class="navbar">
-    <img [src]="'assets/images/upcoming-unscreen.gif'" class="navbar-logo">
+  <nav class="navbar">
+    <img src="assets/images/upcoming-unscreen.gif" class="navbar-logo" alt="Focusly logo" />
     <span class="brand-text">Focusly</span>
-</nav>
+  </nav>
 
+  <main class="login-page">
+    <div class="container d-flex justify-content-center" id="main-container">
+      <div class="card p-4 login-card" style="width: 420px">
+        <h2 class="form-title">Welcome back</h2>
 
-<div class="login-page">
-        <div class="container mt-5 d-flex justify-content-center" id="main-container">
-            <div class="card p-4" style="width: 400px;">
-                <form action="#" method="post">
-                    <div class="mb-4">
-                        <input autocomplete="off" autofocus class="form-control" name="email" placeholder="Email" type="email" required>
-                    </div>
-                    <div class="mb-4">
-                        <input class="form-control" name="password" placeholder="Password" type="password" required>
-                    </div>
-                    <div class="d-grid">
-                        <!-- Login Button -->
-                        <button class="btn btn-primary mb-2" type="submit">Login</button>
-                    </div>
-                </form>
-                <div class="text-center">
-                    <!-- Register Link -->
-                    <p>Don't have an account? <a routerLink="/Register">Register here</a></p>
-                    <!-- Forgot Password Link -->
-                    <p>Forgot your password? <a href="#">Reset it here</a></p>
-                </div>
-            </div>
+        <form class="login-form" action="#" autocomplete="off" novalidate>
+          <div class="form-group floating">
+            <input
+              id="login_email"
+              name="email"
+              type="email"
+              required
+              class="form-control"
+              placeholder=" "
+            />
+            <label for="login_email" class="floating-label">Email</label>
+          </div>
+
+          <div class="form-group floating">
+            <input
+              id="login_password"
+              name="password"
+              type="password"
+              required
+              class="form-control"
+              placeholder=" "
+            />
+            <label for="login_password" class="floating-label">Password</label>
+          </div>
+
+          <div class="form-row options-row">
+            <a class="forgot-link" href="#">Forgot?</a>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Login</button>
+        </form>
+
+        <div class="text-center mt-3">
+          <p>
+            Don't have an account?
+            <a [routerLink]="['/Register']" class="link-inline">Register here</a>
+          </p>
         </div>
+        
+      </div>
     </div>
+        <footer class="component-footer">© 2025 Focusly — Mohamed tarek</footer>
+  </main>
 </body>
