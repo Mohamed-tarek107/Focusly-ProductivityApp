@@ -1,0 +1,43 @@
+<body>
+    <nav class="navbar">
+    <img src="assets/images/upcoming-unscreen.gif" class="navbar-logo" alt="Focusly logo" />
+    <span class="brand-text">Focusly</span>
+    </nav>
+
+    <main class="login-page">
+    <div class="container d-flex justify-content-center" id="main-container">
+        <div class="card p-4 login-card" style="width: 420px">
+        <h2 class="form-title">Welcome back</h2>
+
+        <form class="login-form" action="#" autocomplete="off" novalidate>
+            <div class="form-group floating">
+            <input
+                id="login_email"
+                name="email"
+                type="email"
+                required
+                class="form-control"
+                placeholder=" "
+            />
+            <label for="login_email" class="floating-label">Email</label>
+            </div>
+
+            <div class="form-row options-row">
+            <a class="forgot-link" [routerLink]="['/Login']">Remember?</a>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Send Verfication</button>
+        </form>
+
+        <div class="text-center mt-3">
+            <p>
+            Don't have an account?
+            <a [routerLink]="['/Register']" class="link-inline">Register here</a>
+            </p>
+        </div>
+        
+        </div>
+    </div>
+        <footer class="component-footer">© 2025 Focusly — Mohamed Tarek</footer>
+    </main>
+</body>
